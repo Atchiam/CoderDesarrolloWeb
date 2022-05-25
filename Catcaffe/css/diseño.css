@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+        display: inline;
+        color: black;
+        background-color: #CC9544;
+        margin: 15px;
+        padding: 10px;
+        margin-bottom: 50px;
+        border-radius: 50px 50px 0px 0px;
+}
+
+.title {
+    position: absolute;
+    width: 1203px;
+    height: 178px;
+    left: 122px;
+    top: 134px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 173;
+    font-size: 96px;
+    line-height: 116px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.header{
+    background-color: #603601;
+    padding: 1%;
+}
+
+.body{
+    background-color: #1C0A00;
+    color:#CC9544;
+    font-size: 300%;
+    padding: auto ;  
+}
+
+footer{
+    background-color: #361500;
+    color:#CC9544;
+    padding: 1%;
+}
+
+.bodygatitos{
+    background-image: url(/Catcaffe/imagenes/gato-wallpaper-1.jpeg) ;
+    padding: 1%;
+}
