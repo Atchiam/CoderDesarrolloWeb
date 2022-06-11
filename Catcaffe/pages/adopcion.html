@@ -8,10 +8,10 @@
     <link rel="shortcut icon" href="../assets/imagenes/Logo.png">
     <link rel="stylesheet" href="/css/diseño.css">
 </head>
-<body>
+<body class="container__main">
     <nav>
-        <a href="../index.html"><img src="../assets/imagenes/Logo.png" alt="SashimiNeko-logo" height="55px"></a>
-        <ul>
+        <a class="logo" href="../index.html"><img src="../assets/imagenes/Logo.png" alt="SashimiNeko-logo" height="55px"></a>
+        <ul class="letras__nav">
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./gatos.html">Gatos</a></li>
             <li><a href="./adopcion.html">Adopcion</a></li>
@@ -20,53 +20,58 @@
         </ul>
     </nav>
     <header>
-        <h2>Gracias por querer adoptar uno de nuestros michis</h2>
+        <h1>Gracias por querer adoptar uno de nuestros michis</h1>
     </header>
     <main class="bodygatitos">
-    <form action="">
-        <fieldset>
-            <legend>Formulario de Adopcion</legend>
-            <div>
-                <input type="text" placeholder="Nombre: ">                
-                <input type="text" placeholder="Apellido: "> 
-                <input type="number" name="numero de tel" id="" placeholder="Numero de telefono:">               
-                <input type="email" name="Email"placeholder="Email:" id=""> 
-                <input type="text" placeholder="Direccion:">
-            </div>
-            <h4>Porquete gustaria adoptar uno de nuestros gatos?</h4>           
-            <input type="text">
-            <h4>Tiene mas mascotas?</h4>
-            <label for="mas-mascotas-no">no</label>
-            <input type="radio" name="mas-mascotas" value="no" id="mas-mascotas-no">
-            <label for="mas-mascotas-si">si</label>
-            <input type="radio" name="mas-mascotas" value="si" id="mas-mascotas-si">
-            
-            <h4>que animales te gustan?</h4>
-            
-            <label for="Gatos">Gatos</label>
-            <input type="checkbox" name="gusto-de-animales" value="gatos" id="Gatos">
-            <label for="perros">perros</label>
-            <input type="checkbox" name="gusto-de-animales" value="perros" id="perros">
-            <label for="arañas">arañas</label>
-            <input type="checkbox" name="gusto-de-animales" value="arañas" id="arañas">
-            <label for="conejos">conejos</label>
-            <input type="checkbox" name="gusto-de-animales" value="conejos" id="conejos">
-            <div>
-                <input type="reset"> <Input type="submit">
-            </div>
-        </fieldset>
-    </form>
+        <form class="cuestionario" action="">
+            <fieldset class="cuestionario__body">
+                <legend class="tarjeta__titulo">Formulario de Adopcion</legend>
+                <div class="cuestionario__part cuestionario__completar">
+                    <label> Nombre <input type="text" placeholder="Nombre: " id="name"></label>
+                    <label> Apellido <input type="text" placeholder="Apellido: " id="apellido"> </label>
+                    <label> Telefono <input type="number" name="numero de tel" id="tel" placeholder="Numero de telefono:"> </label>
+                    <label> E-mail <input type="email" name="Email"placeholder="Email:" id="email"> </label>
+                    <label> Direccion <input type="text" placeholder="Direccion:" id="direccion"></label>
+                    <h2>Porquete gustaria adoptar uno de nuestros gatos?</h2>           
+                    <label>Escrivi tu respuesta <input type="text"></label>
+                </div>
+                <div class="cuestionario__part cuestionario__completar">
+                    <h2>Tiene mas mascotas?</h2>
+                    <div class="cuestionario__btn btn">
+                        <label for="mas-mascotas-no">no</label>
+                        <input type="radio" name="mas-mascotas" value="no" id="mas-mascotas-no">
+                        <label for="mas-mascotas-si">si</label>
+                        <input type="radio" name="mas-mascotas" value="si" id="mas-mascotas-si">
+                    </div>
+                    <h2>que animales te gustan?</h2>
+                    <div class="cuestionario__btn btn">
+                        <label for="Gatos">Gatos</label>
+                        <input type="checkbox" name="gusto-de-animales" value="gatos" id="Gatos">
+                        <label for="perros">perros</label>
+                        <input type="checkbox" name="gusto-de-animales" value="perros" id="perros">
+                        <label for="arañas">arañas</label>
+                        <input type="checkbox" name="gusto-de-animales" value="arañas" id="arañas">
+                        <label for="conejos">conejos</label>
+                        <input type="checkbox" name="gusto-de-animales" value="conejos" id="conejos">
+                    </div>
+                </div>
+                <div class="cuestionario__part btn__cuestionario">
+                    <input class="btn" type="reset">
+                    <Input class="btn" type="submit">
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
-        <h5>
+        <p>
             Tel: *******
             Direccion: calle falsa 123 UKS
-        </h5>
-        <h5>
+        </p>
+        <p>
             PRIVACY POLICY
             TERMS & CONDITIONS
             ©2022
-        </h5>
+        </p>
     </footer>
 </body>
 </html>
