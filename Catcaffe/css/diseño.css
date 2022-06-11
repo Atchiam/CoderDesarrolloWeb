@@ -111,6 +111,7 @@ nav {
     align-items: flex-end;
     align-content: stretch;
     position: sticky;
+    top: 0px;
     grid-area: nav;
     align-self: baseline;
 }
