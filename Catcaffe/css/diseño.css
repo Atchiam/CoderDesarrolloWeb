@@ -3,18 +3,6 @@
     margin: 0px;
     box-sizing: border-box;
 }
-.container__home{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 0.2fr) repeat(2, 4fr) 0.2fr;
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    grid-template-areas:"nav     nav     nav     nav     nav"
-                        "main    main    main    main    main"
-                        "main    main    main    main    main"
-                        "main    main    main    main    main"
-                        "footer  footer  footer  footer  footer";    
-}
 
 .container__main{
     display: grid;
